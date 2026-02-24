@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 喵星球</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐱</span>
+                <span class="logo-text">喵星球</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="hospital.html">宠物医院</a></li>
+                <li><a href="shop.html">用品商城</a></li>
+                <li><a href="user.html" class="active">个人中心</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn-search">🔍</button>
+                <button class="btn-cart">🛒 <span class="cart-count">3</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero user-hero">
+        <div class="hero-content">
+            <div style="width: 120px; height: 120px; background: linear-gradient(135deg, #7b1fa2, #ba68c8); border-radius: 50%; margin: 0 auto 30px; display: flex; align-items: center; justify-content: center; font-size: 60px;">
+                👤
+            </div>
+            <h1 class="hero-title">欢迎回来<br>铲屎官</h1>
+            <p class="hero-subtitle">管理您的宠物信息、订单和健康档案<br>享受专属会员权益</p>
+            <div class="hero-buttons">
+                <a href="#pets" class="btn btn-primary">管理宠物</a>
+                <a href="#orders" class="btn btn-secondary">查看订单</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="services-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="service-card" style="padding: 30px 20px;">
+                    <div style="font-size: 36px; font-weight: 600; color: var(--apple-blue); margin-bottom: 10px;">1280</div>
+                    <div style="font-size: 14px; color: var(--apple-gray);">会员积分</div>
+                </div>
+                <div class="service-card" style="padding: 30px 20px;">
+                    <div style="font-size: 36px; font-weight: 600; color: var(--apple-blue); margin-bottom: 10px;">3</div>
+                    <div style="font-size: 14px; color: var(--apple-gray);">我的宠物</div>
+                </div>
+                <div class="service-card" style="padding: 30px 20px;">
+                    <div style="font-size: 36px; font-weight: 600; color: var(--apple-blue); margin-bottom: 10px;">12</div>
+                    <div style="font-size: 14px; color: var(--apple-gray);">历史订单</div>
+                </div>
+                <div class="service-card" style="padding: 30px 20px;">
+                    <div style="font-size: 36px; font-weight: 600; color: var(--apple-blue); margin-bottom: 10px;">VIP</div>
+                    <div style="font-size: 14px; color: var(--apple-gray);">会员等级</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="pets">
+        <div class="feature-block">
+            <div class="feature-content">
+                <h2 class="feature-title">我的宠物</h2>
+                <p class="feature-desc">管理您的猫咪信息，记录成长点滴，设置健康提醒，让每一只猫咪都得到最好的照顾</p>
+                <a href="#" class="btn btn-outline">添加宠物</a>
+            </div>
+            <div class="feature-visual">
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center;">
+                    <div class="health-card" style="width: 200px;">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #ff6b6b, #ee5a24); border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-size: 40px;">🐱</div>
+                            <div style="font-weight: 600; font-size: 18px;">橘子</div>
+                            <div style="font-size: 12px; color: var(--apple-gray);">英国短毛猫 · 3岁</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="health-item">
+                                <span class="label">体重</span>
+                                <span class="value">4.5kg</span>
+                            </div>
+                            <div class="health-item">
+                                <span class="label">疫苗</span>
+                                <span class="status good">✓ 已接种</span>
+                            </div>
+                            <div class="health-item">
+                                <span class="label">下次体检</span>
+                                <span class="date">2026-03-15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="health-card" style="width: 200px;">
+                        <div style="text-align: center; margin-bottom: 15px;">
+                            <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #74b9ff, #0984e3); border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-size: 40px;">🐱</div>
+                            <div style="font-weight: 600; font-size: 18px;">雪球</div>
+                            <div style="font-size: 12px; color: var(--apple-gray);">布偶猫 · 2岁</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="health-item">
+                                <span class="label">体重</span>
+                                <span class="value">3.8kg</span>
+                            </div>
+                            <div class="health-item">
+                                <span class="label">疫苗</span>
+                                <span class="status good">✓ 已接种</span>
+                            </div>
+                            <div class="health-item">
+                                <span class="label">下次驱虫</span>
+                                <span class="date">2026-02-28</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>关于喵星球</h4>
+                    <ul>
+                        <li><a href="#">品牌故事</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">加入我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>服务支持</h4>
+                    <ul>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">配送说明</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>合作伙伴</h4>
+                    <ul>
+                        <li><a href="#">宠物医院</a></li>
+                        <li><a href="#">供应商</a></li>
+                        <li><a href="#">公益组织</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>关注我们</h4>
+                    <div class="social-links">
+                        <a href="#">微信</a>
+                        <a href="#">微博</a>
+                        <a href="#">抖音</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 喵星球. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
