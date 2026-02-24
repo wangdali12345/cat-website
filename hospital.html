@@ -3,125 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>宠物医院 - 喵星球</title>
+    <title>用品商城 - 喵星球</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .hero { background: linear-gradient(180deg, #fff8e7 0%, #f5f5f7 100%); }
+    </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <span class="logo-icon">🐱</span>
-                <span class="logo-text">喵星球</span>
+                <span>喵星球</span>
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="hospital.html" class="active">宠物医院</a></li>
-                <li><a href="shop.html">用品商城</a></li>
+                <li><a href="hospital.html">宠物医院</a></li>
+                <li><a href="shop.html" class="active">用品商城</a></li>
                 <li><a href="user.html">个人中心</a></li>
             </ul>
             <div class="nav-actions">
-                <button class="btn-search">🔍</button>
-                <button class="btn-cart">🛒 <span class="cart-count">0</span></button>
+                <button class="nav-btn">🔍</button>
+                <button class="nav-btn">🛒<span class="cart-badge">3</span></button>
             </div>
         </div>
     </nav>
 
-    <section class="hero hospital-hero">
-        <div class="hero-content">
-            <h1 class="hero-title">专业医疗<br>守护健康</h1>
-            <p class="hero-subtitle">24小时在线问诊 · 顶级兽医团队<br>为您的猫咪健康保驾护航</p>
-            <div class="hero-buttons">
-                <a href="#appointment" class="btn btn-primary">立即预约</a>
-                <a href="#services" class="btn btn-secondary">了解服务</a>
+    <section class="hero">
+        <div class="hero-badge">
+            <span>🛍️</span>
+            <span>品质好物</span>
+        </div>
+        <h1 class="hero-title">精选好物<br>品质保证</h1>
+        <p class="hero-subtitle">严选全球优质猫粮、玩具、用品<br>让猫咪享受精致生活</p>
+        <div class="hero-cta">
+            <a href="#products" class="btn btn-primary btn-large">立即选购</a>
+            <a href="#categories" class="btn btn-secondary btn-large">浏览分类</a>
+        </div>
+    </section>
+
+    <section class="section" id="categories">
+        <div class="section-header">
+            <p class="section-eyebrow">Categories</p>
+            <h2 class="section-title">商品分类</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🥫</div>
+                <h3>猫粮主食</h3>
+                <p>干粮、湿粮、冻干、生骨肉</p>
+                <a href="#" class="link-arrow">浏览商品 →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🧸</div>
+                <h3>玩具娱乐</h3>
+                <p>逗猫棒、猫抓板、电动玩具</p>
+                <a href="#" class="link-arrow">浏览商品 →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>家居用品</h3>
+                <p>猫窝、猫爬架、猫砂盆</p>
+                <a href="#" class="link-arrow">浏览商品 →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+                <h3>护理清洁</h3>
+                <p>猫砂、洗护用品、梳子</p>
+                <a href="#" class="link-arrow">浏览商品 →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">💊</div>
+                <h3>医疗保健</h3>
+                <p>驱虫药、营养膏、保健品</p>
+                <a href="#" class="link-arrow">浏览商品 →</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">👔</div>
+                <h3>服饰配件</h3>
+                <p>猫咪衣服、项圈、牵引绳</p>
+                <a href="#" class="link-arrow">浏览商品 →</a>
             </div>
         </div>
     </section>
 
-    <section class="services" id="services">
-        <div class="container">
-            <h2 class="section-title">医疗服务</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">💉</div>
-                    <h3>疫苗接种</h3>
-                    <p>猫三联、狂犬疫苗等全套接种服务，建立免疫档案，定期提醒续种</p>
-                    <a href="#" class="link-arrow">预约接种 →</a>
+    <section class="products-section" id="products">
+        <div class="section-header">
+            <p class="section-eyebrow">Products</p>
+            <h2 class="section-title">热门商品</h2>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop" alt="猫粮">
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🔬</div>
-                    <h3>健康体检</h3>
-                    <p>血常规、生化、B超等全面检查，早发现早预防，守护猫咪健康</p>
-                    <a href="#" class="link-arrow">预约体检 →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">💊</div>
-                    <h3>疾病治疗</h3>
-                    <p>内科、外科、皮肤科等专科诊疗，先进设备，精准治疗</p>
-                    <a href="#" class="link-arrow">在线咨询 →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🦷</div>
-                    <h3>口腔护理</h3>
-                    <p>洗牙、拔牙、口腔疾病治疗，让猫咪拥有健康牙齿</p>
-                    <a href="#" class="link-arrow">预约护理 →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">✂️</div>
-                    <h3>绝育手术</h3>
-                    <p>微创绝育手术，专业麻醉团队，术后精心护理</p>
-                    <a href="#" class="link-arrow">预约手术 →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">🚑</div>
-                    <h3>急诊救助</h3>
-                    <p>24小时急诊服务，急救车接送，争分夺秒抢救生命</p>
-                    <a href="#" class="link-arrow">紧急呼叫 →</a>
+                <div class="product-info">
+                    <h4 class="product-name">皇家猫粮 4kg</h4>
+                    <p class="product-desc">全价成猫粮，营养均衡</p>
+                    <div class="product-price">¥268</div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="products" id="appointment">
-        <div class="container">
-            <h2 class="section-title">在线预约</h2>
-            <div class="products-grid" style="max-width: 600px; margin: 0 auto;">
-                <div class="product-card" style="grid-column: 1 / -1; text-align: left;">
-                    <form style="display: flex; flex-direction: column; gap: 20px;">
-                        <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">宠物姓名</label>
-                            <input type="text" placeholder="请输入猫咪名字" style="width: 100%; padding: 12px; border: 1px solid #d2d2d7; border-radius: 10px; font-size: 16px;">
-                        </div>
-                        <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">服务类型</label>
-                            <select style="width: 100%; padding: 12px; border: 1px solid #d2d2d7; border-radius: 10px; font-size: 16px;">
-                                <option>疫苗接种</option>
-                                <option>健康体检</option>
-                                <option>疾病治疗</option>
-                                <option>口腔护理</option>
-                                <option>绝育手术</option>
-                                <option>急诊救助</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">预约时间</label>
-                            <input type="datetime-local" style="width: 100%; padding: 12px; border: 1px solid #d2d2d7; border-radius: 10px; font-size: 16px;">
-                        </div>
-                        <div>
-                            <label style="display: block; margin-bottom: 8px; font-weight: 500;">联系电话</label>
-                            <input type="tel" placeholder="请输入手机号码" style="width: 100%; padding: 12px; border: 1px solid #d2d2d7; border-radius: 10px; font-size: 16px;">
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">提交预约</button>
-                    </form>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1545249390-6bdfa286032f?w=400&h=400&fit=crop" alt="猫爬架">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">豪华猫爬架</h4>
+                    <p class="product-desc">多层设计，稳固耐用</p>
+                    <div class="product-price">¥599</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=400&fit=crop" alt="猫玩具">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">电动逗猫棒</h4>
+                    <p class="product-desc">智能感应，自动逗猫</p>
+                    <div class="product-price">¥129</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1513245543132-31f507417b26?w=400&h=400&fit=crop" alt="猫砂">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">豆腐猫砂 6L</h4>
+                    <p class="product-desc">天然环保，快速结团</p>
+                    <div class="product-price">¥45</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=400&fit=crop" alt="猫窝">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">舒适猫窝</h4>
+                    <p class="product-desc">柔软亲肤，保暖舒适</p>
+                    <div class="product-price">¥158</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=400&h=400&fit=crop" alt="营养膏">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">营养膏 120g</h4>
+                    <p class="product-desc">补充维生素，增强免疫力</p>
+                    <div class="product-price">¥68</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=400&fit=crop" alt="沐浴露">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">猫咪沐浴露</h4>
+                    <p class="product-desc">温和配方，不刺激皮肤</p>
+                    <div class="product-price">¥45</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255db?w=400&h=400&fit=crop" alt="猫抓板">
+                </div>
+                <div class="product-info">
+                    <h4 class="product-name">猫抓板套装</h4>
+                    <p class="product-desc">瓦楞纸材质，耐抓耐磨</p>
+                    <div class="product-price">¥39</div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="container">
+        <div class="footer-content">
             <div class="footer-grid">
-                <div class="footer-section">
+                <div class="footer-column">
                     <h4>关于喵星球</h4>
                     <ul>
                         <li><a href="#">品牌故事</a></li>
@@ -129,7 +187,7 @@
                         <li><a href="#">加入我们</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-column">
                     <h4>服务支持</h4>
                     <ul>
                         <li><a href="#">帮助中心</a></li>
@@ -137,7 +195,7 @@
                         <li><a href="#">配送说明</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-column">
                     <h4>合作伙伴</h4>
                     <ul>
                         <li><a href="#">宠物医院</a></li>
@@ -145,21 +203,24 @@
                         <li><a href="#">公益组织</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-column">
                     <h4>关注我们</h4>
-                    <div class="social-links">
-                        <a href="#">微信</a>
-                        <a href="#">微博</a>
-                        <a href="#">抖音</a>
-                    </div>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">抖音</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 喵星球. 保留所有权利.</p>
+                <p class="footer-copyright">Copyright © 2026 喵星球. 保留所有权利.</p>
+                <div class="footer-links">
+                    <a href="#">隐私政策</a>
+                    <a href="#">使用条款</a>
+                    <a href="#">网站地图</a>
+                </div>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
